@@ -17,8 +17,8 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellId = "Cell"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath)
-
+        let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! MFMTableViewCell
+        
         
         return cell
     }
