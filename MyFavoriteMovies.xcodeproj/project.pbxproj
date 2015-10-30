@@ -56,15 +56,47 @@
 		B7FE54C01BE365B8002A96E6 /* MyFavoriteMovies */ = {
 			isa = PBXGroup;
 			children = (
-				B7FE54C11BE365B8002A96E6 /* AppDelegate.swift */,
-				B7FE54C31BE365B8002A96E6 /* ViewController.swift */,
+				B7FE54D71BE365DC002A96E6 /* Model */,
+				B7FE54D81BE365E3002A96E6 /* View */,
+				B7FE54D91BE365EA002A96E6 /* Controller */,
 				B7FE54C51BE365B8002A96E6 /* Main.storyboard */,
+				B7FE54D61BE365CE002A96E6 /* Main */,
+			);
+			path = MyFavoriteMovies;
+			sourceTree = "<group>";
+		};
+		B7FE54D61BE365CE002A96E6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE54C11BE365B8002A96E6 /* AppDelegate.swift */,
 				B7FE54CB1BE365B8002A96E6 /* Assets.xcassets */,
 				B7FE54CD1BE365B8002A96E6 /* LaunchScreen.storyboard */,
 				B7FE54D01BE365B8002A96E6 /* Info.plist */,
 				B7FE54C81BE365B8002A96E6 /* MyFavoriteMovies.xcdatamodeld */,
 			);
-			path = MyFavoriteMovies;
+			name = Main;
+			sourceTree = "<group>";
+		};
+		B7FE54D71BE365DC002A96E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B7FE54D81BE365E3002A96E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B7FE54D91BE365EA002A96E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B7FE54C31BE365B8002A96E6 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
