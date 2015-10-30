@@ -22,6 +22,13 @@ class MFMTableViewCell: UITableViewCell {
         movieImage.layer.cornerRadius = CORNER_RADIUS
         movieImage.clipsToBounds = true
     }
+    
+    func configureCell(movie:Movie) {
+        movieImage.image = movie.getImage()
+        movieTitle.text = movie.title
+        movieUrl.text = movie.movieUrl
+        movieDescription.text = movie.descriptionTxt
+    }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

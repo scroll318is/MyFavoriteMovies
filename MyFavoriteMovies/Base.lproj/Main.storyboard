@@ -152,10 +152,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="qHX-Vs-KId"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="R1I-dj-E11"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <animations/>
@@ -183,6 +179,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="4xW-vz-iOQ" id="qIY-uR-vzF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
