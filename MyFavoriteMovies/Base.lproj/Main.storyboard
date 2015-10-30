@@ -81,14 +81,14 @@
                                                     <blurEffect style="dark"/>
                                                 </visualEffectView>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="783-o6-giQ">
-                                                    <rect key="frame" x="8" y="11" width="97" height="97"/>
+                                                    <rect key="frame" x="3" y="11" width="97" height="97"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="783-o6-giQ" secondAttribute="height" multiplier="1:1" id="tH4-Y3-CgQ"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The default Movie Titles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="Jyk-uf-Tx6">
-                                                    <rect key="frame" x="113" y="8" width="469" height="21"/>
+                                                    <rect key="frame" x="106" y="8" width="461" height="21"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20.5" id="LZi-xc-l6v"/>
@@ -98,7 +98,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="fW6-NX-WBC">
-                                                    <rect key="frame" x="113" y="42" width="469" height="66"/>
+                                                    <rect key="frame" x="108" y="42" width="469" height="66"/>
                                                     <animations/>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     <string key="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</string>
@@ -107,7 +107,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="http://www.imdb.com/title/tt1170358/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="s36-2v-zkf">
-                                                    <rect key="frame" x="113" y="27" width="461" height="18"/>
+                                                    <rect key="frame" x="106" y="27" width="461" height="18"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="ZSd-FH-Pw7"/>
@@ -124,19 +124,19 @@
                                                 <constraint firstItem="fW6-NX-WBC" firstAttribute="top" secondItem="s36-2v-zkf" secondAttribute="bottom" constant="-3" id="20s-yd-XXA"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="7py-Ik-SwF" secondAttribute="bottom" id="4Su-Kb-ckX"/>
                                                 <constraint firstItem="fW6-NX-WBC" firstAttribute="top" secondItem="Jyk-uf-Tx6" secondAttribute="bottom" id="NM0-g6-hpN"/>
-                                                <constraint firstItem="fW6-NX-WBC" firstAttribute="trailing" secondItem="mKz-pg-7QG" secondAttribute="trailingMargin" id="Sox-9L-gEl"/>
+                                                <constraint firstItem="fW6-NX-WBC" firstAttribute="trailing" secondItem="mKz-pg-7QG" secondAttribute="trailingMargin" constant="-5" id="Sox-9L-gEl"/>
                                                 <constraint firstAttribute="bottom" secondItem="fW6-NX-WBC" secondAttribute="bottom" constant="12" id="Tmk-8p-BQU"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="7py-Ik-SwF" secondAttribute="trailing" id="aze-Hb-7Mb"/>
                                                 <constraint firstItem="Jyk-uf-Tx6" firstAttribute="top" secondItem="mKz-pg-7QG" secondAttribute="topMargin" id="gVd-Fe-kst"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="783-o6-giQ" secondAttribute="bottom" constant="4" id="hrC-OW-LYQ"/>
-                                                <constraint firstItem="783-o6-giQ" firstAttribute="leading" secondItem="mKz-pg-7QG" secondAttribute="leadingMargin" id="iar-Ij-mbK"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="s36-2v-zkf" secondAttribute="trailing" constant="8" id="kuy-08-pQg"/>
-                                                <constraint firstItem="s36-2v-zkf" firstAttribute="leading" secondItem="783-o6-giQ" secondAttribute="trailing" constant="8" id="mXQ-b0-JtL"/>
+                                                <constraint firstItem="783-o6-giQ" firstAttribute="leading" secondItem="mKz-pg-7QG" secondAttribute="leadingMargin" constant="-5" id="iar-Ij-mbK"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="s36-2v-zkf" secondAttribute="trailing" constant="15" id="kuy-08-pQg"/>
+                                                <constraint firstItem="s36-2v-zkf" firstAttribute="leading" secondItem="783-o6-giQ" secondAttribute="trailing" constant="6" id="mXQ-b0-JtL"/>
                                                 <constraint firstItem="7py-Ik-SwF" firstAttribute="leading" secondItem="mKz-pg-7QG" secondAttribute="leadingMargin" constant="-10" id="mj0-U4-0Dg"/>
-                                                <constraint firstItem="Jyk-uf-Tx6" firstAttribute="leading" secondItem="783-o6-giQ" secondAttribute="trailing" constant="8" id="nfk-oQ-fFu"/>
+                                                <constraint firstItem="Jyk-uf-Tx6" firstAttribute="leading" secondItem="783-o6-giQ" secondAttribute="trailing" constant="6" id="nfk-oQ-fFu"/>
                                                 <constraint firstItem="783-o6-giQ" firstAttribute="top" secondItem="mKz-pg-7QG" secondAttribute="topMargin" constant="3" id="p3D-dk-kBn"/>
                                                 <constraint firstItem="s36-2v-zkf" firstAttribute="top" secondItem="mKz-pg-7QG" secondAttribute="topMargin" constant="19" id="rPa-Mb-bkh"/>
-                                                <constraint firstItem="Jyk-uf-Tx6" firstAttribute="trailing" secondItem="mKz-pg-7QG" secondAttribute="trailingMargin" id="rVy-Dw-Ibm"/>
+                                                <constraint firstItem="Jyk-uf-Tx6" firstAttribute="trailing" secondItem="mKz-pg-7QG" secondAttribute="trailingMargin" constant="-15" id="rVy-Dw-Ibm"/>
                                                 <constraint firstItem="7py-Ik-SwF" firstAttribute="top" secondItem="mKz-pg-7QG" secondAttribute="topMargin" id="uQE-mS-3qX"/>
                                             </constraints>
                                             <variation key="default">

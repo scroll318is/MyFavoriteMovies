@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class MFMAddMovieViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+class MFMAddMovieViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate, UITextFieldDelegate {
 
     @IBOutlet weak var titleTxtBox: UITextField!
     @IBOutlet weak var whyDoYouLikeItTxtBox: UITextField!
@@ -24,6 +24,12 @@ class MFMAddMovieViewController: UIViewController,UIImagePickerControllerDelegat
         super.viewDidLoad()
         imagePicker = UIImagePickerController()
         imagePicker.delegate = self
+        
+        
+        titleTxtBox.delegate = self
+        whyDoYouLikeItTxtBox.delegate = self
+        descriptionTxtBox.delegate = self
+        urlTxtBox.delegate = self
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
@@ -35,6 +41,11 @@ class MFMAddMovieViewController: UIViewController,UIImagePickerControllerDelegat
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         addImageBtn.hidden = false
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        view.endEditing(true)
+        return true
     }
     
     @IBAction func onSaveTapped(sender: UIButton) {
