@@ -36,24 +36,6 @@ class ViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-    func creteMovie() {
-        let app = UIApplication.sharedApplication().delegate as! AppDelegate
-        let context = app.managedObjectContext
-        let entity = NSEntityDescription.entityForName("Movie", inManagedObjectContext: context)
-        let movie = Movie(entity: entity!, insertIntoManagedObjectContext: context)
-        movie.movieUrl = "test desc"
-        movie.title = "test"
-        movie.setImage(UIImage(named: "logo")!)
-        movie.descriptionTxt = "dada"
-        movie.plotdescrioption = "daadad"
-        
-        do {
-            try context.save()
-        } catch let error as NSError  {
-            print("Could not save \(error), \(error.userInfo)")
-        }
-    }
-    
     func fetchAndSetResults() {
         let app = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = app.managedObjectContext

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B78B3E0F1BE3BFD600673BDA /* MFMAddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78B3E0E1BE3BFD600673BDA /* MFMAddMovieViewController.swift */; };
 		B7BBE74E1BE37B68009864D5 /* MFMTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBE74D1BE37B68009864D5 /* MFMTableViewCell.swift */; };
 		B7BBE75A1BE382E7009864D5 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBE7581BE382E7009864D5 /* Movie+CoreDataProperties.swift */; };
 		B7BBE75B1BE382E7009864D5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BBE7591BE382E7009864D5 /* Movie.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B78B3E0E1BE3BFD600673BDA /* MFMAddMovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMAddMovieViewController.swift; sourceTree = "<group>"; };
 		B7BBE74D1BE37B68009864D5 /* MFMTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFMTableViewCell.swift; sourceTree = "<group>"; };
 		B7BBE7511BE3826C009864D5 /* MyFavoriteMovies-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyFavoriteMovies-Bridging-Header.h"; sourceTree = "<group>"; };
 		B7BBE7581BE382E7009864D5 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Movie+CoreDataProperties.swift"; path = "../Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				B7FE54C31BE365B8002A96E6 /* ViewController.swift */,
+				B78B3E0E1BE3BFD600673BDA /* MFMAddMovieViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				B7BBE75B1BE382E7009864D5 /* Movie.swift in Sources */,
 				B7FE54CA1BE365B8002A96E6 /* MyFavoriteMovies.xcdatamodeld in Sources */,
 				B7FE54C41BE365B8002A96E6 /* ViewController.swift in Sources */,
+				B78B3E0F1BE3BFD600673BDA /* MFMAddMovieViewController.swift in Sources */,
 				B7FE54C21BE365B8002A96E6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
