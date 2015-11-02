@@ -26,7 +26,7 @@ class MFMTableViewCell: UITableViewCell {
     func configureCell(movie:Movie) {
         movieImage.image = movie.getImage()
         movieTitle.text = movie.title
-        movieUrl.text = movie.movieUrl
+        movieUrl.text = movie.url
         movieDescription.text = movie.descriptionTxt
     }
 

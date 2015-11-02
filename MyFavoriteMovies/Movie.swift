@@ -2,7 +2,7 @@
 //  Movie.swift
 //  MyFavoriteMovies
 //
-//  Created by Stoyan Yordanov Kostov on 10/30/15.
+//  Created by Stoyan Yordanov Kostov on 11/2/15.
 //  Copyright © 2015 com.kostov. All rights reserved.
 //
 
@@ -14,15 +14,16 @@ class Movie: NSManagedObject {
 
     func setImage(image: UIImage) {
         let data = UIImagePNGRepresentation(image)
-        self.movieImage = data
+        self.coverImage = data
     }
     
     func getImage() -> UIImage? {
-        if movieImage != nil {
-            if let image = UIImage(data: movieImage!) {
+        if self.coverImage != nil {
+            if let image = UIImage(data: self.coverImage!) {
                 return image
             }
         }
         return nil
     }
+
 }

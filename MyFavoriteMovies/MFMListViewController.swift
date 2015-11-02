@@ -8,7 +8,7 @@
 
 import UIKit
 import CoreData
-class ViewController: UIViewController, UITableViewDataSource {
+class MFMListViewController: UIViewController, UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
     
@@ -16,7 +16,6 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.delegate = self
         tableView.dataSource = self
     }
     
@@ -47,11 +46,22 @@ class ViewController: UIViewController, UITableViewDataSource {
         } catch let err as NSError {
             print(err.debugDescription)
         }
-        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movies.count
     }
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "DetailsSegue" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                if let detailsVC = segue.destinationViewController as? MFMDetailsViewController {
+                    detailsVC.movie = movies[indexPath.row]
+                }
+            }
+        }
+    }
+
 }
 

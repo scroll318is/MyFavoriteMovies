@@ -67,7 +67,7 @@ class MFMAddMovieViewController: UIViewController,UIImagePickerControllerDelegat
         let context = app.managedObjectContext
         let entity = NSEntityDescription.entityForName("Movie", inManagedObjectContext: context)
         let movie = Movie(entity: entity!, insertIntoManagedObjectContext: context)
-        movie.movieUrl = urlTxtBox.text
+        movie.url = urlTxtBox.text
         movie.title = titleTxtBox.text
         movie.setImage(imageView.image!)
         movie.descriptionTxt = whyDoYouLikeItTxtBox.text
@@ -86,5 +86,4 @@ class MFMAddMovieViewController: UIViewController,UIImagePickerControllerDelegat
     @IBAction func onAddImageTapped(sender: UIButton) {
         presentViewController(imagePicker, animated: true, completion: nil)
     }
-
 }
