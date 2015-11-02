@@ -22,7 +22,7 @@ class MFMListViewController: UIViewController, UITableViewDataSource {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         fetchAndSetResults()
-        tableView.reloadData() 
+        tableView.reloadData()
     }
     
     
@@ -33,6 +33,19 @@ class MFMListViewController: UIViewController, UITableViewDataSource {
         cell.configureCell(movies[indexPath.row])
         
         return cell
+    }
+    
+    func removeLastElement() {
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = app.managedObjectContext
+        
+        context.deleteObject(movies.last!)
+        
+        do {
+            try context.save()
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
     
     func fetchAndSetResults() {

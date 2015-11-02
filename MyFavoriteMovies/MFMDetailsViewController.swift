@@ -27,6 +27,9 @@ class MFMDetailsViewController: UIViewController {
         whyDoILikeIt.text = movie.descriptionTxt
     }
     
+    @IBAction func onBackBtnTap(sender: UIButton) {
+        dismissViewControllerAnimated(true, completion: {})
+    }
     @IBAction func onUrlTapped(sender: UIButton) {
         let url = NSURL(string: movie.url!)
         if UIApplication.sharedApplication().canOpenURL(url!) {

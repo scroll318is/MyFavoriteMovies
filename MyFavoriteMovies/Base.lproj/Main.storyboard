@@ -159,6 +159,18 @@
                                                 </mask>
                                             </variation>
                                         </scrollView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXE-4f-YB3">
+                                            <rect key="frame" x="8" y="8" width="79" height="35"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="35" id="4x8-xY-37C"/>
+                                                <constraint firstAttribute="width" constant="79" id="miL-0T-aeK"/>
+                                            </constraints>
+                                            <state key="normal" backgroundImage="Back"/>
+                                            <connections>
+                                                <action selector="onBackBtnTap:" destination="UaO-F8-Z9w" eventType="touchUpInside" id="dmO-cf-0Vq"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <animations/>
                                     <constraints>
@@ -168,6 +180,8 @@
                                         <constraint firstItem="enY-1i-2b7" firstAttribute="top" secondItem="l0Q-UG-24s" secondAttribute="top" id="XUc-tM-RYi"/>
                                         <constraint firstItem="8k6-CZ-A7V" firstAttribute="leading" secondItem="l0Q-UG-24s" secondAttribute="leading" id="ecZ-Zs-yS7"/>
                                         <constraint firstAttribute="bottom" secondItem="8k6-CZ-A7V" secondAttribute="bottom" id="r4y-Of-mGT"/>
+                                        <constraint firstItem="tXE-4f-YB3" firstAttribute="leading" secondItem="l0Q-UG-24s" secondAttribute="leading" constant="8" id="tvQ-RW-Ijw"/>
+                                        <constraint firstItem="tXE-4f-YB3" firstAttribute="top" secondItem="l0Q-UG-24s" secondAttribute="top" constant="8" id="xE9-8Y-263"/>
                                         <constraint firstItem="enY-1i-2b7" firstAttribute="leading" secondItem="l0Q-UG-24s" secondAttribute="leading" id="zrr-Ma-gww"/>
                                     </constraints>
                                 </view>
@@ -752,6 +766,7 @@
     </scenes>
     <resources>
         <image name="-Image" width="386" height="101"/>
+        <image name="Back" width="282" height="100"/>
         <image name="addMovie" width="238" height="58"/>
         <image name="cancel" width="183" height="58"/>
         <image name="default" width="450" height="424"/>
